@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipping Request</title>
+</head>
+<body>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        {{ form.sender.label }}: {{ form.sender() }}
+        {{ form.recipient.label }}: {{ form.recipient() }}
+        {{ form.origin.label }}: {{ form.origin() }}
+        {{ form.destination.label }}: {{ form.destination() }}
+        {{ form.express_shipping.label }}: {{ form.express_shipping() }}
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
